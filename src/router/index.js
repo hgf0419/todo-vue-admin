@@ -22,6 +22,15 @@ const routes = [
     }
   },
   {
+    path: '/test',
+    name: 'Test',
+    component: () => import('@/views/Test.vue'),
+    meta: {
+      title: '测试',
+      requireAuth: true
+    }
+  },
+  {
     path: '**',
     redirect: '/'
   }
